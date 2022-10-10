@@ -22,7 +22,6 @@
              <p><strong>Agenda</strong></p>
              <ol>
                 <li>Individual Check-ins</li>
-                <li>Progress Report</li>
                 <li>Plans for the next meeting</li>
              </ol>
              <div id="attendance">
@@ -40,13 +39,84 @@
              <b>Individual Check-in</b>
              <ul> 
                 <li>Person A - Finished their part of the README</li>
-                <li>Person B - Did <em>NOT</em> finish their part of the README</li>
+                <li>Person B - Did <span style="color:red"><em>NOT</em></span> finish their part of the README</li>
                 <li>Person C - Created the outline for the <i>Final Project Extravaganza!</i></li>
              </ul>
+
+             <b>Future Plans</b>
+             <p>
+                Consult these websites:
+                <nav>
+                    <a href = "https://google.com">Google</a>
+                    <a href = "https://reddit.com">Reddit</a>
+                </nav>
+             </p>
         </section>
         <hr>
     </main>
     
 
   </body>
+  <footer>
+    <p>Reason why I am doing this</p>
+    <img src="UCSD Logo.png" width="50" height="50">
+    <a href="https://ucsd.edu">UCSD</a>
+    <p>The place where I did this lab</p>
+    <video width="720" height="540" controls>
+        <source src="Biomed Recording.mp4" type="video/mp4">
+    </video>
+    <p>The quietness of the plae where I did this lab</p>
+    <audio controls>
+        <source src="Quietness of the Biomed Library.mp3" type="audio/mp3">
+    </audio>
+    <details>
+        <summary>Testing Summary and Details</summary>
+        Yay it works!
+    </details>
+
+  </footer>
+  <h1>FORM</h1>
+  <form>
+    <fieldset>
+        <label for="kpopname">Favorite K-Pop Group</label>
+        <input type="text" id="kpopname" name="kpopname">
+        <label for="likekpop">Do you like K-Pop?</label>
+        <input list = "choices" name ="likekpop" id = "likekpop">
+        <datalist id="choices">
+            <option value="Yes">
+            <option value="Yes">
+        </datalist>
+        <br>
+        Which K-Pop Groups Have You Heard Of?
+        <input type="checkbox" id="group1" name="group1" value="BTS">
+        <label for="group1">BTS</label>
+        <input type="checkbox" id="group2" name="group2" value="Blackpink">
+        <label for="group2">Blackpink</label>
+        <input type="checkbox" id="group3" name="group3" value="Twice">
+        <label for="group3">Twice</label>
+        <br>
+        <p>Do you think BTS is the best K-Pop group?</p>
+        <input type="radio" id="yes" name="yesorno" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="yesorno" value="no">
+        <label for="no">No</label>
+        <br>
+        <label for="today">Today's Date:</label>
+        <input type="date" id="today" name="today">
+        <br>
+        <label for="refgroup">Which group did I subtly reference in this form?</label>
+        <select name="refgroup" id="refgroup"> 
+            <option value="blackpink">Blackpink</option>
+            <option value="bts">BTS</option>
+            <option value="twice">Twice</option>
+
+        </select>
+        
+        <br>
+        Thoughts?
+        <textarea id="anythoughts" name="anythoughts" rows="1" cols="25"></textarea>
+        
+    </fieldset>
+    <button type="button" onclick="alert('You clicked me')">Try!</button>
+  </form>
 </html>
