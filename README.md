@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-Link to my GitHub Page:  https://eyc004.github.io/Lab2_Starter/
+# Lab 3 - Starter
+Link to my GitHub Page:  https://eyc004.github.io/fa22-cse110-lab3/
