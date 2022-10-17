@@ -4,6 +4,7 @@
     <title>Meeting Minutes</title>
     <meta charset="UTF-8">
     <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="mystyles.css">
   </head>
 
     <body>
@@ -12,7 +13,7 @@
            <h1>Meeting Minutes</h1>
         </header>
         <section>
-            <h2>Meeting Note #1</h2> 
+            <h2 id="latestmeeting">Meeting Note #1</h2> 
              <h3>Check-ins and Future Plans</h3>
              <h3>10/9/2022</h3>
              <p>
@@ -24,6 +25,7 @@
                 <li>Individual Check-ins</li>
                 <li>Plans for the next meeting</li>
              </ol>
+             
              <div id="attendance">
                 <b>Attendance</b>
                 <p><em>Present</em></p>
@@ -71,7 +73,9 @@
             </details>
         </footer>
            
-        
+       
+
+        <div class="box">
           <h1>FORM</h1>
           <form>
             <fieldset>
@@ -91,8 +95,9 @@
                 <label for="group2">Blackpink</label>
                 <input type="checkbox" id="group3" name="group3" value="Twice">
                 <label for="group3">Twice</label>
+                
                 <br>
-                <p>Do you think BTS is the best K-Pop group?</p>
+               <p style="color:hsl(273, 98%, 60%);"> Do you think BTS is the best K-Pop group?</p>
                 <input type="radio" id="yes" name="yesorno" value="yes">
                 <label for="yes">Yes</label>
                 <input type="radio" id="no" name="yesorno" value="no">
@@ -109,13 +114,13 @@
         
                 </select>
                 
-                <br>
                 Thoughts?
                 <textarea id="anythoughts" name="anythoughts" rows="1" cols="25"></textarea>
                 
             </fieldset>
             <button type="button" onclick="alert('You clicked me')">Try!</button>
           </form>
+        </span>
         </main> 
     </body>
  
