@@ -3,10 +3,32 @@ body {
 }
 
 h1 {
-    color: black
+    color: black;
+    text-decoration-line: underline;
+    text-align: center;
 }
 
 #latestmeeting {
     color:rgba(255, 0, 0, 0.884)
 }
 
+.box {
+    width:1200px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 2em;
+    padding-left: 0em;
+    padding-top: 0em;
+    padding-bottom: 2em;
+    padding-right: 20;
+    border-style:dotted;
+    border-width: 5px;
+    border-color: black;
+}
+
+.alternate{
+    margin: 3ex 1cm .5in .5in;
+    padding: 0em 0em 2em 2em;
+    border: 2rem solid pink;
+}
