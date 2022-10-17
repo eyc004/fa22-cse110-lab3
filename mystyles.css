@@ -13,7 +13,8 @@ h1 {
 }
 
 .box {
-    width:1200px;
+    width:1400px;
+    height:300px;
     margin-top: 40px;
     margin-right: 40px;
     margin-bottom: 40px;
@@ -28,7 +29,25 @@ h1 {
 }
 
 .alternate{
+    min-width: 1000px;
+    max-width: 1200px;
+    max-height: 100px;
     margin: 3ex 1cm .5in .5in;
     padding: 0em 0em 2em 2em;
     border: 2rem solid pink;
 }
+
+.flex-container {
+    display: flex;
+    background: darkolivegreen;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.flex-container > div {
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    font-size: 10px;
+}
+
