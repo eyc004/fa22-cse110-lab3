@@ -5,11 +5,26 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        a:hover {
+            background-color: palegoldenrod;
+        }
+        a:active {
+            background-color: aquamarine;
+        }
+        h1 {
+            font-family: 'Tangerine', serif;
+            font-size: 50px;
+        }
+    </style>
   </head>
 
     <body>
+        
         <main>
         <header>
+            
            <h1>Meeting Minutes</h1>
         </header>
         <section>
@@ -29,13 +44,17 @@
              <div id="attendance">
                 <b>Attendance</b>
                 <p><em>Present</em></p>
-                Person A <br>
-                Person B <br>
-                Person C
-
+                <div class = "flex-container">
+                    <div>Person A</div>
+                    <div>Person B</div>
+                    <div>Person C</div>
+                </div>
                 <p><em>Not Present</em></p>
-                Person D <br>
-                Person E
+                <div class="grid-container">
+                    <div class="grid-item">Person D</div>
+                    <div class="grid-item">Person E</div>
+                    <div class="grid-item">Person F</div>
+                </div>
              </div>
              
              <b>Individual Check-in</b>
@@ -63,10 +82,12 @@
             <video width="720" height="540" controls>
                 <source src="BiomedRecording.mp4" type="video/mp4">
             </video>
-            <p>The quietness of the place where I did this lab</p>
-            <audio controls>
-                <source src="QuietnessoftheBiomedLibrary.mp3" type="audio/mp3">
-            </audio>
+            <div class="box alternate">
+                <p>The quietness of the place where I did this lab</p>
+                <audio controls>
+                    <source src="QuietnessoftheBiomedLibrary.mp3" type="audio/mp3">
+                </audio>
+            </div>
             <details>
                 <summary>Testing Summary and Details</summary>
                 Yay it works!
