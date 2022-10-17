@@ -1,17 +1,31 @@
+/*Makes the entire background a light white color*/
 body {
     background-color: whitesmoke;
 }
 
-h1 {
+/*Headers h1 and h2 have the color black and will be in the center and underlined*/
+h1, h2 {
     color: black;
     text-decoration-line: underline;
     text-align: center;
 }
 
+/*The latest meeting will be obvious since it's in red*/
 #latestmeeting {
     color:rgba(255, 0, 0, 0.884)
 }
 
+/*Shows that it is the beginning of a new section*/
+p.intro {
+    background-color: azure;
+}
+
+/*It's important to make the date obvious so they will be colored darkslategrey*/
+*#date {
+    color: darkslategrey
+}
+
+/*Defines a box that will hold information*/
 .box {
     display: inline-block;
     position:static;
@@ -30,6 +44,7 @@ h1 {
     border-color: black;
 }
 
+/*An alternate box for the audio recording*/
 .alternate{
     display: block;
     min-width: 1000px;
@@ -40,13 +55,14 @@ h1 {
     border: 2rem solid pink;
 }
 
+/*A container to move things according to what it should hold*/
 .flex-container {
     display: flex;
     background: darkolivegreen;
     justify-content: center;
     flex-wrap: nowrap;
 }
-
+/*The individual elements in the flex container*/
 .flex-container > div {
     background-color: aliceblue;
     margin: 10px;
@@ -54,6 +70,7 @@ h1 {
     font-size: 10px;
 }
 
+/*A container to hold things in a more organized manner*/
 .grid-container {
     display:grid;
     row-gap: 10px;
@@ -63,18 +80,47 @@ h1 {
     background-color: darkred;
     padding: 15px;
 }
-
+/*Each individual item in the grid, and shun those who didn't come*/
 .grid-item {
     position:relative;
-    background-color: lightcoral;
+    background-color: red;
+    padding: 30px;
+    border: 3px solid black;
+    padding: 15px;
+
+}
+/*If two siblings are seen near each other, make their backgrounds greenyellow*/
+.grid-item  + .grid-item{
+    position:relative;
+    background-color: greenyellow;
+    padding: 30px;
+    border: 3px solid black;
+    padding: 15px;
+
+}
+/*If two siblings are generally one after another, then make their backgrounds green*/
+.grid-item  ~ .grid-item{
+    position:relative;
+    background-color: green;
     padding: 30px;
     border: 3px solid black;
     padding: 15px;
 
 }
 
+/*Makes it clear that this is the attendance list*/
+#attendance b{
+    background-color: palevioletred;
+}
+
+
+/*Different background colors since smaller displays need to emphasize contrast*/
 @media only screen and (max-width: 1000px) {
     body {
         background-color: white;
     }
+}
+/*Google is special*/
+a[href="https://google.com"] {
+    color:cadetblue;
 }
